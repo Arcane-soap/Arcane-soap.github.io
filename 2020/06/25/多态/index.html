@@ -6,21 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>多态 | Hexo</title>
+  <title>多态 | Arcane&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="什么是多态">
 <meta property="og:type" content="article">
 <meta property="og:title" content="多态">
 <meta property="og:url" content="http://yoursite.com/2020/06/25/%E5%A4%9A%E6%80%81/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Arcane&#39;s Blog">
 <meta property="og:description" content="什么是多态">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-06-25T09:14:59.000Z">
-<meta property="article:modified_time" content="2020-06-29T15:04:28.884Z">
-<meta property="article:author" content="Soap">
+<meta property="article:modified_time" content="2020-08-02T08:49:09.003Z">
+<meta property="article:author" content="Arcane">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Arcane&#39;s Blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -50,7 +50,7 @@
 			<img src="" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">Soap</a></h1>
+		  <h1 class="header-author"><a href="/">Arcane</a></h1>
 		</hgroup>
 		
 
@@ -108,7 +108,7 @@
 				<img src="" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">Soap</h1>
+			  <h1 class="header-author js-header-author">Arcane</h1>
 			</hgroup>
 			
 			
@@ -182,42 +182,26 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p> 什么是多态</p>
-<a id="more"></a>
-<p>package OOP.多态;<br>public class HuaHu {</p>
-<pre><code> String name=&quot;花弧&quot;;
-int age=50;
-String sex=&quot;男&quot;;
+        <h1 id="什么是多态"><a href="#什么是多态" class="headerlink" title="什么是多态"></a>什么是多态</h1><a id="more"></a>
 
-public void kill() {
-    System.out.println(&quot;花弧骑马杀敌&quot;);
-}
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HuaHu</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">     String name=<span class="string">"花弧"</span>;</span><br><span class="line">    <span class="keyword">int</span> age=<span class="number">50</span>;</span><br><span class="line">    String sex=<span class="string">"男"</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">kill</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"花弧骑马杀敌"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
 
-//public   void introduce() {
-//    System.out.println(name);
-//    System.out.println(age);
-//    System.out.println(sex);
-//}</code></pre><p>}</p>
-<p>class MuLan  extends HuaHu {<br>     String name=”花木兰”;<br>     int age=23;<br>     String sex = “女”;</p>
-<pre><code>public  void makeup() {
-    System.out.println(&quot;涂脂抹粉&quot;);
-}
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">class MuLan  extends HuaHu &#123;</span><br><span class="line">     String name&#x3D;&quot;花木兰&quot;;</span><br><span class="line">     int age&#x3D;28;</span><br><span class="line">     String sex &#x3D; &quot;女&quot;;</span><br><span class="line"></span><br><span class="line">    public   void makeup() &#123;</span><br><span class="line">        System.out.println(&quot;涂脂抹粉&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    public void kill() &#123;</span><br><span class="line">        System.out.println(&quot;花木兰骑马杀敌&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<p>测试：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args) &#123;</span><br><span class="line">    HuaHu huaHu &#x3D; new MuLan();</span><br><span class="line">    System.out.println(huaHu.name);</span><br><span class="line">    System.out.println(huaHu.age);</span><br><span class="line">    System.out.println(huaHu.sex);</span><br><span class="line">    huaHu.kill();</span><br><span class="line"></span><br><span class="line">    System.out.println(&quot;------战争结束后------&quot;);</span><br><span class="line"></span><br><span class="line">    MuLan muLan &#x3D; (MuLan) huaHu;</span><br><span class="line">    System.out.println(muLan.name);</span><br><span class="line">    ((MuLan) huaHu).makeup();</span><br><span class="line">    huaHu.kill();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-public void kill() {
-    System.out.println(&quot;花木兰骑马杀敌&quot;);
-}</code></pre><p>}</p>
-<p>class Demo_Test1 {<br>    public static void main(String[] args) {<br>        HuaHu huaHu = new MuLan();<br>        System.out.println(huaHu.name);<br>        System.out.println(huaHu.age);<br>        System.out.println(huaHu.sex);<br>        huaHu.kill();</p>
-<pre><code>    System.out.println(&quot;------战争结束后------&quot;);
+<p>输出：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">花弧</span><br><span class="line">55</span><br><span class="line">男</span><br><span class="line">花木兰骑马杀敌</span><br><span class="line">------战争结束后------</span><br><span class="line">花木兰</span><br><span class="line">28</span><br><span class="line">女</span><br><span class="line">涂脂抹粉</span><br><span class="line">花木兰骑马杀敌</span><br></pre></td></tr></table></figure>
 
-    MuLan muLan = (MuLan) huaHu;
-    System.out.println(muLan.name);
-    ((MuLan) huaHu).makeup();
-    huaHu.kill();
-
-
-}</code></pre><p>}</p>
-<p>/*<br>花木兰替父从军<br>大家都知道花木兰替父从军的例子，花木兰替父亲花弧从军。那么这时候花木兰是子类，花弧是父类。<br>花弧有自己的成员属性年龄，姓名，性别。花木兰也有这些属性，但是很明显二者的属性完全不一样<br>。花弧有自己的非静态成员方法‘骑马杀敌’，同样花木兰也遗传了父亲一样的方法‘骑马杀敌’。<br>花弧还有一个静态方法‘自我介绍’，每个人都可以问花弧姓甚名谁。<br>同时花木兰还有一个自己特有的非静态成员方法‘涂脂抹粉’。<br>但是，现在花木兰替父从军，女扮男装。这时候相当于父类的引用（花弧这个名字）指向了子类对象（花木兰这个人），那么在其他类（其他的人）中访问子类对象（花木兰这个人）的成员属性（姓名，年龄，性别）时，其实看到的都是花木兰她父亲的名字（花弧）、年龄（60岁）、性别（男）。<br>当访问子类对象（花木兰这个人）的非静态成员方法（骑马打仗）时，其实都是看到花木兰自己运用十八般武艺在骑马打仗。<br>当访问花木兰的静态方法时（自我介绍），花木兰自己都是用她父亲的名字信息在向别人作自我介绍。并且这时候花木兰不能使用自己特有的成员方法‘涂脂抹粉’。<br>—–多态中的向上转型那么终于一将功成万骨枯，打仗旗开得胜了，花木兰告别了战争生活<br>。有一天，遇到了自己心爱的男人，这时候爱情的力量将父类对象的引用（花弧这个名字）强制转换为子类对象本来的引用（花木兰这个名字），那么花木兰又从新成为了她自己，这时候她完全是她自己了。名字是花木兰，年龄是28，性别是女，打仗依然那样生猛女汉子，自我介绍则堂堂正正地告诉别人我叫花木兰。<br>OMG！终于，终于可以使用自己特有的成员方法‘涂脂抹粉’了。从此，花木兰完全回到了替父从军前的那个花木兰了。并且和自己心爱的男人幸福的过完了一生。<br>—–多态中的向下转型<br>———————————————————-华丽的分割线—————————————————————<br>大家记得哈，向上转型向下转型一定是在多态这个前提下哈，否则强制将女儿变成父亲，或者将父亲变成女人，就变成东方不败了，系统此时就会报错非法类型转换。<br>另外开发中一般是利用多态声明形式参数，并将创建子类的匿名对象作为实际参数。<br> */</p>
+<p>花木兰替父从军<br>大家都知道花木兰替父从军的例子，花木兰替父亲花弧从军。那么这时候花木兰是子类，花弧是父类。</p>
+<p>花弧有自己的成员属性年龄，姓名，性别。花木兰也有这些属性，但是很明显二者的属性完全不一样<br>。<br>花弧有自己的非静态成员方法‘骑马杀敌’，同样花木兰也遗传了父亲一样的方法‘骑马杀敌’。</p>
+<p>同时花木兰还有一个自己特有的非静态成员方法‘涂脂抹粉’。<br>但是，现在花木兰替父从军，女扮男装。这时候相当于父类的引用（花弧这个名字）指向了子类对象（花木兰这个人），那么在其他类（其他的人）中访问子类对象（花木兰这个人）的成员属性（姓名，年龄，性别）时，其实看到的都是花木兰她父亲的名字（花弧）、年龄（55岁）、性别（男）。<br>当访问子类对象（花木兰这个人）的非静态成员方法（骑马打仗）时，其实都是看到花木兰自己运用自己的武艺在骑马打仗。<br>当访问花木兰的成员变量时，花木兰自己都是用她父亲的名字信息在向别人作自我介绍。<br>并且这时候花木兰不能使用自己特有的成员方法‘涂脂抹粉’。</p>
+<h3 id="—–多态中的向上转型"><a href="#—–多态中的向上转型" class="headerlink" title="—–多态中的向上转型"></a>—–多态中的向上转型</h3><p>那么终于一将功成万骨枯，打仗旗开得胜了，花木兰告别了战争生活。</p>
+<p>有一天，遇到了心爱的将军，这时候爱情的力量将父类对象的引用（花弧这个名字）强制转换为子类对象本来的引用（花木兰这个名字），那么花木兰又从新成为了她自己，这时候她完全是她自己了。名字是花木兰，年龄是28，性别是女，打仗依然那样生猛女汉子，自我介绍则堂堂正正地告诉别人我叫花木兰。<br>终于，可以使用自己特有的成员方法‘涂脂抹粉’了。从此，花木兰完全回到了替父从军前的那个花木兰了。 </p>
+<h3 id="—–多态中的向下转型"><a href="#—–多态中的向下转型" class="headerlink" title="—–多态中的向下转型"></a>—–多态中的向下转型</h3><hr>
+<p>向上转型向下转型一定是在多态这个前提下，否则强制将女儿变成父亲，或者将父亲变成女人，就变成TaiLand了，系统此时就会报错非法类型转换。</p>
+<h2 id="多态存在要有三个前提："><a href="#多态存在要有三个前提：" class="headerlink" title="多态存在要有三个前提："></a>多态存在要有三个前提：</h2><p>1.要有继承关系<br>2.子类要重写父类方法<br>3.父类引用指向子类<br>靠的是父类或接口定义的引用变量可以指向子类或具体实现类的实例对象，而程序调用的方法在运行期才动态绑定，就是引用变量所指向的具体实例对象的方法，也就是内存里正在运行的那个对象的方法，而不是引用变量的类型中定义的方法。</p>
 
       
 
@@ -360,7 +344,7 @@ public void kill() {
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2020 Soap
+    		&copy; 2020 Arcane
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
