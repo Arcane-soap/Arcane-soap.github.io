@@ -175,7 +175,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="为什么要在北上广"><a href="#为什么要在北上广" class="headerlink" title="为什么要在北上广"></a>为什么要在北上广</h2><p>聊一个该不该在北上广这样的一线城市生活工作的问题，这个问题和技术没关系。但技术不能百分百解决生活的问题，想要更好的生活还需从更多的角度思考。一个程序员究竟是该在一线城市，还是回三线老家，这确实是个问题。</p>
+        <p>聊一个该不该在北上广这样的一线城市生活工作的问题，这个问题和技术没关系。但技术不能百分百解决生活的问题，想要更好的生活还需从更多的角度思考。一个程序员究竟是该在一线城市，还是回三线老家，这确实是个问题。</p>
 <p>有些人说，北上广深房子太贵了，人口密度太大了，消费水平太高了。在这个地方生活不易啊，还是在老家吧。有的年轻人就离开了这些一线城市，可是过了段时间，这些年轻人又都蔫不出的回来了，这是为什么呢？</p>
         
           <a class="article-more-a" href="/2021/01/29/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%9C%A8%E5%8C%97%E4%B8%8A%E5%B9%BF/#more">more >></a>
@@ -242,7 +242,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="关于这几次面试"><a href="#关于这几次面试" class="headerlink" title="关于这几次面试"></a>关于这几次面试</h2><p>首先要说明一下，写这篇文章的目的是要从这几次面试找到技术中的不足的地方</p>
+        <p>首先要说明一下，写这篇文章的目的是要从这几次面试找到技术中的不足的地方</p>
 <p>以及根据总结的一些经验来进行下一步的规划。</p>
 <p>通过这几次面试，收获肯定是有的，或者说如果没有这些面试经历，我是肯定不会有那么明确的道路方向，更不会有这篇文章。</p>
         
@@ -289,20 +289,20 @@
 
 
   
-    <article id="post-多态" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-什么是多态" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/06/25/%E5%A4%9A%E6%80%81/">多态</a>
+      <a class="article-title" href="/2020/06/25/%E4%BB%80%E4%B9%88%E6%98%AF%E5%A4%9A%E6%80%81/">多态</a>
     </h1>
   
 
         
         
-<a href="/2020/06/25/%E5%A4%9A%E6%80%81/" class="archive-article-date">
+<a href="/2020/06/25/%E4%BB%80%E4%B9%88%E6%98%AF%E5%A4%9A%E6%80%81/" class="archive-article-date">
   	<time datetime="2020-06-25T09:14:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-25</time>
 </a>
         
@@ -310,10 +310,27 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="什么是多态"><a href="#什么是多态" class="headerlink" title="什么是多态"></a>什么是多态</h1>
-        
-          <a class="article-more-a" href="/2020/06/25/%E5%A4%9A%E6%80%81/#more">more >></a>
-        
+        <a id="more"></a>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HuaHu</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">     String name=<span class="string">"花弧"</span>;</span><br><span class="line">    <span class="keyword">int</span> age=<span class="number">50</span>;</span><br><span class="line">    String sex=<span class="string">"男"</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">kill</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"花弧骑马杀敌"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MuLan</span>  <span class="keyword">extends</span> <span class="title">HuaHu</span> </span>&#123;</span><br><span class="line">     String name=<span class="string">"花木兰"</span>;</span><br><span class="line">     <span class="keyword">int</span> age=<span class="number">28</span>;</span><br><span class="line">     String sex = <span class="string">"女"</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span>   <span class="keyword">void</span> <span class="title">makeup</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"涂脂抹粉"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">kill</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"花木兰骑马杀敌"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>测试：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    HuaHu huaHu = <span class="keyword">new</span> MuLan();</span><br><span class="line">    System.out.println(huaHu.name);</span><br><span class="line">    System.out.println(huaHu.age);</span><br><span class="line">    System.out.println(huaHu.sex);</span><br><span class="line">    huaHu.kill();</span><br><span class="line"></span><br><span class="line">    System.out.println(<span class="string">"------战争结束后------"</span>);</span><br><span class="line"></span><br><span class="line">    MuLan muLan = (MuLan) huaHu;</span><br><span class="line">    System.out.println(muLan.name);</span><br><span class="line">    ((MuLan) huaHu).makeup();</span><br><span class="line">    huaHu.kill();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">花弧</span><br><span class="line">55</span><br><span class="line">男</span><br><span class="line">花木兰骑马杀敌</span><br><span class="line">------战争结束后------</span><br><span class="line">花木兰</span><br><span class="line">28</span><br><span class="line">女</span><br><span class="line">涂脂抹粉</span><br><span class="line">花木兰骑马杀敌</span><br></pre></td></tr></table></figure>
+
+<p>花木兰替父从军<br>大家都知道花木兰替父从军的例子，花木兰替父亲花弧从军。那么这时候花木兰是子类，花弧是父类。</p>
+<p>花弧有自己的成员属性年龄，姓名，性别。花木兰也有这些属性，但是很明显二者的属性完全不一样<br>。<br>花弧有自己的非静态成员方法‘骑马杀敌’，同样花木兰也遗传了父亲一样的方法‘骑马杀敌’。</p>
+<p>同时花木兰还有一个自己特有的非静态成员方法‘涂脂抹粉’。<br>但是，现在花木兰替父从军，女扮男装。这时候相当于父类的引用（花弧这个名字）指向了子类对象（花木兰这个人），那么在其他类（其他的人）中访问子类对象（花木兰这个人）的成员属性（姓名，年龄，性别）时，其实看到的都是花木兰她父亲的名字（花弧）、年龄（55岁）、性别（男）。<br>当访问子类对象（花木兰这个人）的非静态成员方法（骑马打仗）时，其实都是看到花木兰自己运用自己的武艺在骑马打仗。<br>当访问花木兰的成员变量时，花木兰自己都是用她父亲的名字信息在向别人作自我介绍。<br>并且这时候花木兰不能使用自己特有的成员方法‘涂脂抹粉’。</p>
+<h3 id="—–多态中的向上转型"><a href="#—–多态中的向上转型" class="headerlink" title="—–多态中的向上转型"></a>—–多态中的向上转型</h3><p>那么终于一将功成万骨枯，打仗旗开得胜了，花木兰告别了战争生活。</p>
+<p>有一天，遇到了心爱的将军，这时候爱情的力量将父类对象的引用（花弧这个名字）强制转换为子类对象本来的引用（花木兰这个名字），那么花木兰又从新成为了她自己，这时候她完全是她自己了。名字是花木兰，年龄是28，性别是女，打仗依然那样生猛女汉子，自我介绍则堂堂正正地告诉别人我叫花木兰。<br>终于，可以使用自己特有的成员方法‘涂脂抹粉’了。从此，花木兰完全回到了替父从军前的那个花木兰了。 </p>
+<h3 id="—–多态中的向下转型"><a href="#—–多态中的向下转型" class="headerlink" title="—–多态中的向下转型"></a>—–多态中的向下转型</h3><hr>
+<p>向上转型向下转型一定是在多态这个前提下，否则强制将女儿变成父亲，或者将父亲变成女人，就变成TaiLand了，系统此时就会报错非法类型转换。</p>
+<h2 id="多态存在要有三个前提："><a href="#多态存在要有三个前提：" class="headerlink" title="多态存在要有三个前提："></a>多态存在要有三个前提：</h2><p>1.要有继承关系<br>2.子类要重写父类方法<br>3.父类引用指向子类<br>靠的是父类或接口定义的引用变量可以指向子类或具体实现类的实例对象，而程序调用的方法在运行期才动态绑定，就是引用变量所指向的具体实例对象的方法，也就是内存里正在运行的那个对象的方法，而不是引用变量的类型中定义的方法。</p>
+
       
 
       
@@ -325,7 +342,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/06/25/%E5%A4%9A%E6%80%81/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/06/25/%E4%BB%80%E4%B9%88%E6%98%AF%E5%A4%9A%E6%80%81/">展开全文 >></a>
         </p>
       
 
